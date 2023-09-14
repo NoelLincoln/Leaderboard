@@ -3,14 +3,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
+  mode: 'development',
+  devServer: {
+    static: './dist',
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Leaderboard',
+      template: 'src/index.html',
+      filename: 'index.html',
     }),
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/to-do-list/',
+
     clean: true,
   },
   module: {
@@ -24,5 +32,8 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };
