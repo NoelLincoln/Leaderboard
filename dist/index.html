@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leaderboard project</title>
+        <style src="style.css"></style>
+    <script defer src="/to-do-list/runtime.js"></script><script defer src="/to-do-list/main.js"></script></head>
+    <body>
+        <section class="main-container">
+            <h1>Leaderboard</h1>
+            <div class="scores-container">
+                <div class="recent-scores">
+                    <div class="recent-scores-title-container">
+                        <h4>Recent Scores</h4>
+                        <button type="button" class="refresh" >Refresh</button>
+                    </div>
+                    <ul class="recent-scores-list" id="scores-list"></ul>
+
+                </div>
+                <form class="add-scores">
+                    <h4>Add your score</h4>
+                    <input type="text" placeholder="Your name" required/>
+                    <input type="text" placeholder="Your score" required/>
+                    <input type="submit"></input>
+
+                </form>
+            </div>
+
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
