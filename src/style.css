@@ -76,10 +76,8 @@ li {
   gap: 2rem;
   list-style-type: none;
   height: 1.5rem;
-}
-
-li > p {
-  width: 50%;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
 }
 
 li:nth-child(even) {

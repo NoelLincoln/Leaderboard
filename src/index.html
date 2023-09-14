@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Leaderboard project</title>
-        <style src="style.css"></style>
+        <style src="./style.css"></style>
     </head>
     <body>
         <section class="main-container">
@@ -13,21 +13,21 @@
                 <div class="recent-scores">
                     <div class="recent-scores-title-container">
                         <h4>Recent Scores</h4>
-                        <button type="button" class="refresh" >Refresh</button>
+                        <button type="button" class="refresh" id="refreshButton" >Refresh</button>
                     </div>
                     <ul class="recent-scores-list" id="scores-list"></ul>
 
                 </div>
-                <form class="add-scores">
+                <form class="add-scores" id="add-scores-form">
                     <h4>Add your score</h4>
-                    <input type="text" placeholder="Your name" required/>
-                    <input type="text" placeholder="Your score" required/>
+                    <input type="text" placeholder="Your name"  id="name" name="name" required/>
+                    <input type="number" placeholder="Your score"  id="score" name="score"required/>
                     <input type="submit"></input>
 
                 </form>
             </div>
 
         </section>
-        <script src="index.js"></script>
+        <script src="./index.js"></script>
     </body>
 </html>
