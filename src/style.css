@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Tyros';
-  src:
-    url('./fonts/Tyros/TyrosPro-Regular.woff2') format('woff2'),
+  src: url('./fonts/Tyros/TyrosPro-Regular.woff2') format('woff2'),
     url('./fonts/Tyros/TyrosPro-Regular.woff') format('woff');
   font-weight: 600;
   font-style: normal;
@@ -55,6 +54,10 @@ button {
   box-shadow: 2px 5px 3px;
 }
 
+button:hover {
+  transform: scale(1.2);
+}
+
 input {
   height: 2rem;
 }
@@ -64,6 +67,10 @@ input[type='submit'] {
   margin-left: 60%;
   cursor: pointer;
   box-shadow: 2px 5px 3px;
+}
+
+input[type='submit']:hover {
+  transform: scale(1.2);
 }
 
 #scores-list {

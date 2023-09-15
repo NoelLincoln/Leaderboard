@@ -13,10 +13,12 @@ async function postData(data) {
     });
 
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      // eslint-disable-next-line no-console
+      console.error('Network response was not ok');
     }
   } catch (error) {
-    throw new Error('Sorry something went wrong', error);
+    // eslint-disable-next-line no-console
+    console.error(error);
   }
 }
 
